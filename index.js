@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const bodyParser = require("body-parser");
-var http = require("http");
+// var http = require("http");
 const errHandler = require("./middlewares/errHandler.middleware");
 const addQuiz = require("./controllers/addQuiz.controller");
 const logger = require("./utils/logger");
@@ -25,7 +25,7 @@ app.get("/v1/logs", cors(), (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-http.createServer(app).listen(PORT, (err) => {
+app.listen(PORT, (err) => {
   if (err) logger("error", err);
   else logger("info", "hackathon api micro-service running on 4000");
 });
