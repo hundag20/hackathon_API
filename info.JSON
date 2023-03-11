@@ -1,0 +1,7 @@
+{"level":"error","message":"Sat Mar 11 2023 12:00:28 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nReferenceError: questions is not defined"}
+{"level":"error","message":"Sat Mar 11 2023 12:00:55 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nReferenceError: Cannot access 'req' before initialization"}
+{"level":"error","message":"Sat Mar 11 2023 12:01:05 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nmissing info in request"}
+{"level":"error","message":"Sat Mar 11 2023 12:02:15 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nmissing info in request"}
+{"level":"error","message":"Sat Mar 11 2023 12:18:46 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nDBError: Access denied for user ''@'localhost' (using password: NO)"}
+{"level":"error","message":"Sat Mar 11 2023 12:19:03 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nDBError: insert into `questions` (`el`) values ('{\\\"question\\\":\\\"when was Ethiopia formed\\\",\\\"ans1\\\":\\\"1938\\\",\\\"ans2\\\":\\\"1948\\\",\\\"ans3\\\":\\\"1986\\\"}') - Unknown column 'el' in 'field list'"}
+{"level":"error","message":"Sat Mar 11 2023 12:21:42 GMT+0300 (East Africa Time) ... smth went wrong @task: addQuiz \nReferenceError: Quiz is not defined"}

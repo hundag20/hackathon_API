@@ -6,5 +6,4 @@ class QuizModel extends Model {
   }
 }
 
-
-module.exports = { quiz: QuizModel};
+module.exports = { Quiz: QuizModel };
