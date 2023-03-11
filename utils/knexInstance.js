@@ -7,7 +7,7 @@ const connString = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
 };
-logger("info", JSON.stringify(connString));
+logger("info", `connString: ${JSON.stringify(connString)}`);
 const knex = require("knex");
 exports.knexInstance = knex({
   client: "mysql2",
