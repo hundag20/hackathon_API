@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 var http = require("http");
 const errHandler = require("./middlewares/errHandler.middleware");
 const addQuiz = require("./controllers/addQuiz.controller");
+const logger = require("./utils/logger");
 
 const app = express();
 
@@ -23,7 +24,7 @@ app.get("/v1/logs", cors(), (req, res) => {
 });
 
 http.createServer(app).listen(4000, (err) => {
-  if (err) console.log("error", err);
-  else console.log("info", "hackathon api micro-service running on 4000");
+  if (err) logger("error", err);
+  else logger("info", "hackathon api micro-service running on 4000");
 });
 module.exports = app;
