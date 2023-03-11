@@ -1,5 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
+const logger = require("./logger");
 const connString = {
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
@@ -8,7 +9,6 @@ const connString = {
 };
 logger("info", JSON.stringify(connString));
 const knex = require("knex");
-const logger = require("./logger");
 exports.knexInstance = knex({
   client: "mysql2",
   connection: connString,
