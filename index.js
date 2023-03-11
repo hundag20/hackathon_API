@@ -23,9 +23,11 @@ app.get("/v1/logs", cors(), (req, res) => {
   res.send(content);
 });
 
-http.createServer(app).listen();
-// (err) => {
-//     if (err) logger("error", err);
-//     else logger("info", "hackathon api micro-service running on 4000");
-//   }
+const PORT = process.env.PORT || 5000;
+
+http.createServer(app).listen(PORT, (err) => {
+  if (err) logger("error", err);
+  else logger("info", "hackathon api micro-service running on 4000");
+});
+
 module.exports = app;
