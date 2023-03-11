@@ -6,7 +6,7 @@ const app = express();
 // require("./controllers/Bot.controller");
 
 // Give the knex instance to objection.
-Model.knex(knexInstance);
+// Model.knex(knexInstance);
 // app.listen(3000, () => console.log(`app listening on port 3000`));
 
 module.exports = { app, Model };
