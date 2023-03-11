@@ -1,3 +1,6 @@
 node_modules
 /.env.development
 /.env.production
+/combined.log
+/info.JSON
+/error.JSON
