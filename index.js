@@ -8,7 +8,7 @@ const addQuiz = require("./controllers/addQuiz.controller");
 const logger = require("./utils/logger");
 const connString = {
   host: process.env.DB_HOST,
-  user: process.env.DB_USER,
+  user: process.env.DBUSER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
 };
