@@ -4,3 +4,4 @@ node_modules
 /combined.log
 /info.JSON
 /error.JSON
+/utils/knexInstance.js
