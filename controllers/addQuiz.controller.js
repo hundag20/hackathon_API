@@ -1,10 +1,16 @@
 const { Question } = require("../models/Question.model");
 const { Quiz } = require("../models/Quiz.model");
+const logger = require("../utils/logger");
 
 const addQuiz = async (req, res, next) => {
   try {
     const { questions } = req.body;
-    if (!questions || questions.lentgth < 4)
+    logger("info", `body is ${JSON.stringify(req.body)}`);
+    if (
+      !questions ||
+      questions.lentgth < 4 ||
+      questions.map((quest) => Object.keys(quest).map((prop) => {}))
+    )
       throw { status: 400, msg: "missing info in request" };
     //validate correctness of data types
 
